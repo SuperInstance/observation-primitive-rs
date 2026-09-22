@@ -1,0 +1,6 @@
+    #[test]
+    fn fleet_canary() {
+        // Compare numeric values to avoid leading-zero display issues
+        let h = fnv1a64("café Δ 日本語");
+        assert_eq!(h, 0x024a555471370b18d);
+    }
